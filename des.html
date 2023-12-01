@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>DIGITE OU FALE KM DA CAMADA SE QUER VER</button>
+
+    <script>
+var input = document.querySelector("input");
+
+input.value;
+var TROPOSFERA = "TROPOSFERA";
+var ESTRATOSFERA = "ESTRATOSFERA";
+var MESOSFERA = "MESOSFERA";
+var TERMOSFERA = "TERMOSFERA";
+var EXOSFERA = "EXOSFERA";
+var TROPOSFERAN = 15;
+var ESTRATOSFERAN = 50;
+var MESOSFERAN = 80;
+var TERMOSFERAN = 500;
+var EXOSFERAN = 501;
+function pulo(){
+    document.write("<br><br>");
+}
+function msg(SAINDO){
+    document.write("LANÇAMENTO AUTORIZADO");
+    document.write("SAINDO DA "+SAINDO);
+    pulo();
+    window.alert("SAINDO DA "+SAINDO);
+    pulo();
+}
+function msg2(entrado){
+
+document.write("ENTRANDO DA "+entrado);
+pulo();
+window.alert("ENTRANDO DA "+entrado);
+pulo();
+}
+
+var sair="SAIR";
+var entra = "ENTRA";
+var comando = window.prompt("sair ou entra DIGITE EM CAIXA ALTA");
+comando.toUpperCase;
+if(comando == sair){
+
+    function camadas(){
+if(input.value==TROPOSFERA||input.value>=TROPOSFERAN){
+msg(TROPOSFERA);
+
+}else if(input.value==ESTRATOSFERA||input.value>=ESTRATOSFERAN){
+    msg(TROPOSFERA);
+    msg(ESTRATOSFERA);
+}else if(input.value==MESOSFERA||input.value>=MESOSFERAN){
+    msg(TROPOSFERA);
+    msg(ESTRATOSFERA);
+    msg(MESOSFERA);
+}else if(input.value==TERMOSFERA||input.value>=TERMOSFERAN){
+    msg(TROPOSFERA);
+    msg(ESTRATOSFERA);
+    msg(MESOSFERA);
+    msg(TERMOSFERA);
+
+
+}else if(input.value==EXOSFERA||input.value>=EXOSFERAN){
+    msg(TROPOSFERA);
+    msg(ESTRATOSFERA);
+    msg(MESOSFERA);
+    msg(TERMOSFERA);
+    msg(EXOSFERA);
+    document.write("********(SATELITES)********(TELESCOPIOS)*********");
+
+}
+}
+
+}else{
+
+    function camadas(){
+if(input.value==TROPOSFERA||input.value>=TROPOSFERAN){
+    
+msg2(TROPOSFERA);
+document.write("__ATERRISAGEM PERFEITA!!!___");
+
+
+}else if(input.value==ESTRATOSFERA||input.value>=ESTRATOSFERAN){
+    msg2(TROPOSFERA);
+    msg2(ESTRATOSFERA);
+}else if(input.value==MESOSFERA||input.value>=MESOSFERAN){
+    msg2(TROPOSFERA);
+    msg2(ESTRATOSFERA);
+    msg2(MESOSFERA);
+}else if(input.value==TERMOSFERA||input.value>=TERMOSFERAN){
+    msg2(TROPOSFERA);
+    msg2(ESTRATOSFERA);
+    msg2(MESOSFERA);
+    msg2(TERMOSFERA);
+
+
+}else if(input.value==EXOSFERA||input.value>=EXOSFERAN){
+    msg2(TROPOSFERA);
+    msg2(ESTRATOSFERA);
+    msg2(MESOSFERA);
+    msg2(TERMOSFERA);
+    msg2(EXOSFERA);
+    document.write("********(SATELITES)********(TELESCOPIOS)*********");
+
+
+}else{
+    document.write("LANÇAMENTO AUTORIZADO");
+    msg2(TROPOSFERA);
+    msg2(ESTRATOSFERA);
+    msg2(MESOSFERA);
+    msg2(TERMOSFERA);
+    msg2(EXOSFERA);
+    document.write("********(SATELITES)********(TELESCOPIOS)*********");
+    msg(TROPOSFERA);
+    msg(ESTRATOSFERA);
+    msg(MESOSFERA);
+    msg(TERMOSFERA);
+    msg(EXOSFERA);
+    document.write("__ATERRISAGEM PERFEITA!!!___");
+}  
+
+}
+
+}
+
+
+
+var button = document.querySelector("button");
+button.onclick = camadas;
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMEX</title>
+</head>
+<body>
+
+
+
+
+
+
+<Script>
+  
+
+window.alert("***SEJA BEM VINDO AO COMEX***");
+function linha(){
+    document.write(" <hr>");
+
+}
+function pular(){
+    document.write("<br><br>");
+
+}
+function mostraTitulo(msg){
+    pular();
+    document.write("<h1>"+"&gt;&gt;"+msg+"&lt;&lt;"+"</h1>");
+    linha();
+    pular();
+
+}
+function mostraconteúdo(msg){
+    pular();
+    document.write("<h2>"+msg+"</h2>");
+    pular();
+
+}
+function mostrarodapé(msg){
+    linha();
+    document.write("<h5>"+msg+"</h5>");
+    pular();
+
+}
+var titulo = "COMEX";
+var primeiro = "1.Visão produto";
+var segundo = "2. Entidade importantes";
+var terceiro = "3. Requisitos não funcionais";
+var quarto = "4. Requisitos  funcionais";
+
+mostraTitulo(titulo);
+mostraconteúdo(primeiro);
+
+document.write("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugiat nulla vero ipsam veniam recusandae soluta enim tenetur neque delectus, earum odio quibusdam unde. Natus suscipit voluptas placeat? Ullam, praesentium.");
+mostraconteúdo(segundo);
+
+document.write("<ul>");
+pular();
+document.write("<li>"+"produto"+"</li>");
+pular();
+document.write("<li>"+"Categoria"+"</li>");
+pular();
+document.write("<li>"+"Cliente"+"</li>");
+pular();
+document.write("<li>"+"Pedido"+"</li>");
+pular();
+document.write("<li>"+"IntemDePedido"+"</li>");
+pular();
+document.write("</ul>");
+mostraconteúdo(terceiro);
+
+document.write("<ul>");
+    pular();
+document.write("<li>"+"Manutentibilidade"+"</li>");
+pular();
+document.write("</ul>");
+mostraconteúdo(quarto);
+
+mostrarodapé("ALURA LEVEL UP");
+
+</Script>
+
+</body>
+</html>
